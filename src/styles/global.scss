@@ -1,0 +1,68 @@
+/* Tailwind base */
+@import "./_mixins";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  color: #020a0a;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+}
+
+@media only screen and (max-width: 1140px) {
+    html {
+        font-size: 14px;
+        line-height: toRem(18);
+    }
+  }
+
+/* > mobile */
+@media only screen and (min-width: 1140px) {
+  html {
+    font-size: 14px;
+    line-height: 1.28rem;
+  }
+}
+
+/* heading */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-heading font-semibold;
+}
+
+h6 {
+  font-size: 0.9rem;
+}
+h5 {
+  font-size: 1rem;
+}
+h4 {
+  font-size: toRem(20);
+  line-height: toRem(24);
+}
+h3 {
+  font-size: toRem(24);
+  line-height: toRem(30);
+}
+h2 {
+  font-size: toRem(24);
+  line-height: toRem(30);
+}
+h1 {
+  font-size: toRem(30);
+  line-height: toRem(34);
+}
+
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  width: 0px;
+  height: 0px;
+}
