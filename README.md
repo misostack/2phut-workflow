@@ -102,7 +102,16 @@ npm add -D sass
 
 - Contains your global store code ( global state and actions )
 
+## Features
+
+### Workflow
+
+```sh
+npm install reactflow
+```
+
 ## References
 
 1. [Tailwindcss](https://tailwindcss.com/)
 2. [Tailwindformcss](https://github.com/tailwindlabs/tailwindcss-forms)
+3. [React WorkFlow](https://reactflow.dev/learn/concepts/plugin-components)

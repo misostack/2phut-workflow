@@ -1,21 +1,15 @@
 import { useState } from "react";
 import nextjsvietnamLogo from "./assets/nextjsvietnam.svg";
+import Workflow from "./components/WorkFlow";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
-      <div>
-        <a href="https://nextjsvietnam.com/" target="_blank">
-          <img
-            src={nextjsvietnamLogo}
-            className="logo nextjsvietnam"
-            alt="NextJSVietnam logo"
-          />
-        </a>
+      <div className="min-h-full">
+        <Workflow></Workflow>
       </div>
-      <h1>ReactJS Structure</h1>
     </>
   );
 }
